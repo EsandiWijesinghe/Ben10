@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Character View</title>
+</head>
+<body>
+    <h1>Select a Character</h1>
+    <h2>Garfield Characters</h2>
+
+    <select id="characterSelect" onchange="changeImage()">
+        <option value="ben">ben</option>
+        <option value="tiger">tiger</option>
+        <option value="guwen">guwen</option>
+       
+    </select>
+
+    <br><br>
+
+    <img id="characterImage" src="img\ben10.jpg,img\tiger.jpg,\guwen.jpg" width="300">
+
+    <script>
+        function changeImage() {
+            var selectedCharacter = document.getElementById("characterSelect").value;
+            document.getElementById("characterImage").src = "images/" + selectedCharacter + ".jpg";
+        }
+    </script>
+
+</body>
+</html>
